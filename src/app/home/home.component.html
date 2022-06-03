@@ -1,0 +1,51 @@
+<section>
+  <div class="card-carrinho-usuario" >
+
+    <h1>Meus pedidos</h1>
+    <strong>{{mesa.nome}}</strong>
+
+    <div class="card-carrinho-usuario-array" *ngFor="let produto of this.mesa.produtos" >
+
+      <div class="dados-produto">
+        <p>{{produto.nome}}</p>
+        <p class="preco">x {{produto.qtdProduto}}</p>
+      </div>
+
+    </div>
+
+    <p class="total" *ngIf="mesa.total > 0" >R$ {{mesa.total}}</p>
+    <div (click)="limparCarrinho(mesa.id)" style="color: var(--text-white); cursor: pointer;">Limpar mesa</div>
+
+  </div>
+
+  <div class="painel-principal">
+
+    <div class="card-categoria" *ngFor="let categoria of this.listaCategorias" >
+
+      <h1>{{categoria.nome}}</h1>
+      <strong>{{categoria.descricao}}</strong>
+
+      <div class="produto">
+        <div class="card-produto" *ngFor="let produto of categoria.produtos" >
+
+          <div class="dados-produto">
+            <div class="nome-preco">
+              <p>{{produto.nome}}</p>
+              <p>R$ {{produto.preco.toFixed(2)}}</p>
+            </div>
+            <div class="descricao">
+              <p>{{produto.descricao}}</p>
+            </div>
+          </div>
+
+          <div class="img" style="background-image: url({{produto.img}});" (click)="pedirProduto(mesa.id, produto.id)" >
+            <!-- BACKGROUND IMG PRODUTO -->
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

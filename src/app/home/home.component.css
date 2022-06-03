@@ -1,0 +1,253 @@
+section {
+  padding: 2%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  background-color: var(--background-header-usuario-home);
+
+}
+
+section .card-carrinho-usuario {
+  position: fixed; /* DEIXA FIXO A O CARRINHO DO USUARIO */
+
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+
+  width: 10%;
+  height: auto;
+
+}
+
+section .card-carrinho-usuario h1 {
+  margin: 0 !important;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-white);
+
+  font-size: 18px !important;
+
+}
+
+section .card-carrinho-usuario strong {
+  margin-bottom: 5%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-titulo-produto);
+
+  font-style: italic;
+  font-size: 14px;
+
+}
+
+section .card-carrinho-usuario .total {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  color: var(--text-titulo-produto);
+
+  font-size: 12px;
+  font-weight: 700;
+
+}
+
+section .card-carrinho-usuario .card-carrinho-usuario-array {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+section .card-carrinho-usuario .card-carrinho-usuario-array .dados-produto {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+section .card-carrinho-usuario .card-carrinho-usuario-array .dados-produto p {
+  width: 80%;
+  height: auto;
+
+  color: var(--text-white);
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+section .card-carrinho-usuario .card-carrinho-usuario-array .dados-produto .preco {
+  width: 20%;
+  height: auto;
+
+  color: var(--text-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+section .painel-principal {
+  margin-left: 20%; /* AJUSTA A MARGEM DO CARRINHO DO USUARIO  */
+
+  width: 60%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .painel-principal .card-categoria {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .painel-principal .card-categoria h1 {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-white);
+
+}
+
+section .painel-principal .card-categoria strong {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-white);
+
+  font-style: italic;
+  font-size: 18px;
+
+}
+
+section .painel-principal .card-categoria .produto {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto {
+  padding: 2% 0%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .dados-produto {
+  width: 75%;
+  height: auto;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .dados-produto .nome-preco {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .dados-produto .nome-preco p {
+  color: var(--text-titulo-produto);
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .dados-produto .descricao {
+  width: 100%;
+  height: auto;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .dados-produto .descricao p {
+  color: var(--text-white);
+
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .img {
+  width: 200px;
+  height: 140px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+}
