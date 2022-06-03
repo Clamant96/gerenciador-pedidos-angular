@@ -71,6 +71,80 @@ section .card-carrinho-usuario .total {
 
 }
 
+section .card-carrinho-usuario .botoes-gerencia-mesas {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+section .card-carrinho-usuario .botoes-gerencia-mesas .limpar-mesa {
+  margin-top: 2.5%;
+  padding: 2% 0.5%;
+
+  width: 75%;
+  height: auto;
+
+  border: 2px solid var(--text-white);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  color: var(--text-white);
+
+  z-index: 10000;
+
+  transition: border, color, .2s ease-in-out;
+
+}
+
+section .card-carrinho-usuario .botoes-gerencia-mesas .limpar-mesa:hover {
+  border: 2px solid var(--background-color-danger-hover);
+
+  color: var(--background-color-danger-hover) !important;
+
+}
+
+section .card-carrinho-usuario .botoes-gerencia-mesas .icone-lista {
+  margin-top: 2%;
+
+  width: 20%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .card-carrinho-usuario .botoes-gerencia-mesas .icone-lista svg {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-white);
+
+  transition: color, .2s ease-in-out;
+
+}
+
+section .card-carrinho-usuario .botoes-gerencia-mesas .icone-lista svg:hover {
+  color: var(--text-titulo-produto);
+
+}
+
 section .card-carrinho-usuario .card-carrinho-usuario-array {
   width: 100%;
   height: auto;
@@ -89,6 +163,13 @@ section .card-carrinho-usuario .card-carrinho-usuario-array .dados-produto {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  cursor: pointer;
+
+}
+
+section .card-carrinho-usuario .card-carrinho-usuario-array .usuario-comun {
+  cursor: default;
 
 }
 

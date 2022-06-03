@@ -22,12 +22,12 @@ export class MesaService {
 
   }*/
 
-  findAllCategorias(): Observable<Mesa[]> {
+  findAllMesas(): Observable<Mesa[]> {
 
     return this.http.get<Mesa[]>(`${this.server}/mesas`);
   }
 
-  findByIdCategoria(id: number): Observable<Mesa> {
+  findByIdMesa(id: number): Observable<Mesa> {
 
     return this.http.get<Mesa>(`${this.server}/mesas/${id}`);
   }
