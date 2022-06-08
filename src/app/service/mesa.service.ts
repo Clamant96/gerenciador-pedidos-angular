@@ -1,3 +1,4 @@
+import { Produto } from './../model/Produto';
 import { Mesa } from './../model/Mesa';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
@@ -45,6 +46,11 @@ export class MesaService {
   removerTodosProdutoAMesa(idMesa: number): Observable<boolean> {
 
     return this.http.get<boolean>(`${this.server}/mesas/limpaCarrinhoMesa/${idMesa}`);
+  }
+
+  carregaUltimoPedidoMesa(idMesa: number): Observable<Produto> {
+
+    return this.http.get<Produto>(`${this.server}/mesas/buscaUltimoProdutoMesa/${idMesa}`);
   }
 
 }

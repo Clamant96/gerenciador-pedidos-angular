@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 
     if(this.tipo != "mesa") {
       // IRA ENTRAR NESSA CONDICAO CASO SEJA UM ADM
-      this.id = 2//this.route.snapshot.params['id'];
+      this.id = this.route.snapshot.params['id'];
 
     }else {
       this.id = environment.id;

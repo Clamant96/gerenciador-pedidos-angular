@@ -1,0 +1,159 @@
+section {
+  padding: 2%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-header-usuario-home);
+
+}
+
+section .lista-mesas {
+  width: 80%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+
+}
+
+section .lista-mesas .conteudo-mesa {
+  padding: 2%;
+
+  width: 33.3333%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .lista-mesas .conteudo-mesa h1 {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-white);
+
+  font-size: 30px !important;
+
+}
+
+section .lista-mesas .conteudo-mesa strong {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: var(--text-white);
+
+  font-style: italic;
+  font-size: 18px;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto {
+  padding: 2% 0%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto p {
+  color: var(--text-white);
+
+  width: 80%;
+  height: auto;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto .qtd-produto {
+  padding: 0.5%;
+
+  width: 10%;
+  min-width: 10%;
+  max-width: 15%;
+  height: auto;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background-color: var(--background-mesagem-usuario);
+
+  border-radius: 10px;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto .img {
+  margin-top: 2%;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+
+}
+
+section .lista-mesas .conteudo-mesa .produto .card-produto .img img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+
+}

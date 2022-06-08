@@ -1,1 +1,27 @@
-<p>gerencia works!</p>
+<section>
+  <div class="lista-mesas">
+
+    <div class="conteudo-mesa" *ngFor="let mesa of this.listaMesas" >
+      <h1>{{mesa.nome}}</h1>
+
+      <div class="produto">
+        <div class="card-produto" *ngFor="let pedido of mesa.produtos | orderBy: key : reverse" >
+
+          <div class="dados-produto">
+            <p>{{pedido.nome}}</p>
+            <p class="qtd-produto">x {{pedido.qtdProduto}}</p>
+          </div>
+
+          <a *ngIf="pedido.img != ''" [routerLink]="['/home', mesa.id]" class="img" >
+            <img src="{{pedido.img}}" />
+          </a>
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
