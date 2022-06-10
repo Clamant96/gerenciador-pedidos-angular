@@ -40,27 +40,6 @@ export class GerenciaComponent implements OnInit {
     // CARREGA TODOS OS USUARIO DA BASE
     this.mesaService.findAllMesas().subscribe((resp: Mesa[]) => {
 
-      resp.map((produto) => {
-
-        // NAVEGA NO RETORNO DA MESA, E PREENCHE O NOME DO PRODUTO
-        produto.produtos.map((item) => {
-
-          if((produto.produtos.length - 1) == this.contador) {
-            item.img = item.img;
-
-            this.contador = 0;
-
-          }else {
-            item.img = "";
-
-            this.contador++;
-
-          }
-
-        });
-
-      });
-
       // POPULA O OBJ MESA COM O RETORNO TRATADO
       this.listaMesas = resp;
 

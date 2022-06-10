@@ -18,7 +18,7 @@
 
     </div>
 
-    <p class="total" *ngIf="mesa.total > 0" >R$ {{mesa.total}}</p>
+    <p class="total" *ngIf="mesa.total > 0" >R$ {{mesa.total.toFixed(2).replace('.', ',')}}</p>
 
     <div class="botoes-gerencia-mesas">
       <div class="limpar-mesa" *ngIf="this.tipo != 'mesa'" (click)="limparCarrinho(mesa.id)" >
@@ -47,7 +47,7 @@
           <div class="dados-produto">
             <div class="nome-preco">
               <p>{{produto.nome}}</p>
-              <p>R$ {{produto.preco.toFixed(2)}}</p>
+              <p>R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
             </div>
             <div class="descricao">
               <p>{{produto.descricao}}</p>

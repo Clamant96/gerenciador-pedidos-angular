@@ -98,6 +98,8 @@ section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
   align-items: center;
   justify-content: center;
 
+  cursor: pointer;
+
 }
 
 section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
@@ -135,24 +137,6 @@ section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto .qtd-p
   justify-content: center;
 
   background-color: var(--background-mesagem-usuario);
-
-  border-radius: 10px;
-
-}
-
-section .lista-mesas .conteudo-mesa .produto .card-produto .img {
-  margin-top: 2%;
-
-  width: 100%;
-  height: auto;
-
-  border-radius: 10px;
-
-}
-
-section .lista-mesas .conteudo-mesa .produto .card-produto .img img {
-  width: 100%;
-  height: auto;
 
   border-radius: 10px;
 
