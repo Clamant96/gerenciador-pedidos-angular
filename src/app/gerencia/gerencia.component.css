@@ -25,15 +25,20 @@ section .lista-mesas {
 }
 
 section .lista-mesas .conteudo-mesa {
+  margin: 1%;
   padding: 2%;
 
-  width: 33.3333%;
+  width: 31.3333%;
   height: auto;
 
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  cursor: pointer;
+
+  background-color: var(--background-page);
 
 }
 
@@ -45,7 +50,7 @@ section .lista-mesas .conteudo-mesa h1 {
   align-items: center;
   justify-content: flex-start;
 
-  color: var(--text-white);
+  color: var(--text-title);
 
   font-size: 30px !important;
 
@@ -78,7 +83,7 @@ section .lista-mesas .conteudo-mesa .produto {
 }
 
 section .lista-mesas .conteudo-mesa .produto .card-produto {
-  padding: 2% 0%;
+  padding: 1% 0%;
 
   width: 100%;
   height: auto;
@@ -98,8 +103,6 @@ section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
   align-items: center;
   justify-content: center;
 
-  cursor: pointer;
-
 }
 
 section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
@@ -113,7 +116,7 @@ section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto {
 }
 
 section .lista-mesas .conteudo-mesa .produto .card-produto .dados-produto p {
-  color: var(--text-white);
+  color: var(--text-link);
 
   width: 80%;
   height: auto;

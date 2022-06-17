@@ -1,0 +1,145 @@
+section {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-header-usuario-home);
+
+}
+
+section .bloco-produto {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+section .bloco-produto .img {
+  width: 67.6vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+
+}
+
+section .bloco-produto .img img {
+  width: 100%;
+  height: auto;
+
+}
+
+section .bloco-produto .dados-produto {
+  width: 32.4vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  background-color: var(--background-page);
+
+  overflow-x: scroll;
+
+}
+
+section .bloco-produto .dados-produto::-webkit-scrollbar {
+  display: none;
+
+}
+
+section .bloco-produto .dados-produto .categoria {
+  padding: 5%;
+
+  width: 100%;
+  height: auto;
+
+}
+
+section .bloco-produto .dados-produto .nome {
+  padding: 0% 5%;
+
+  width: 100%;
+  height: auto;
+
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+section .bloco-produto .dados-produto .preco {
+  padding: 0% 5%;
+
+  width: 100%;
+  height: auto;
+
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+section .bloco-produto .dados-produto .descricao {
+  margin: 5% 0% !important;
+  padding: 0% 5%;
+
+  width: 100%;
+  height: auto;
+
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+section .bloco-produto .dados-produto .voltar-lista {
+  position: absolute;
+
+  padding: 1%;
+
+  width: 60px;
+  height: 60px;
+
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .bloco-produto .dados-produto .voltar-lista svg {
+  padding: 1%;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 50%;
+
+  color: var(--background-add-grupo);
+
+  transition: background-color, color, .2s ease-in-out;
+
+  cursor: pointer;
+
+}
+
+section .bloco-produto .dados-produto .voltar-lista svg:hover {
+  background-color: var(--background-mesagem-usuario);
+
+  color: var(--background-page);
+
+}

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ProdutoService } from './../service/produto.service';
 import { Produto } from './../model/Produto';
 import { Mesa } from './../model/Mesa';
@@ -22,14 +23,22 @@ export class GerenciaComponent implements OnInit {
   public key = 'data';
   public reverse = true;
 
+  public id: number = environment.id;
+
   constructor(
     private mesaService: MesaService,
-    private produtoService: ProdutoService
+    private produtoService: ProdutoService,
+    private router: Router
 
   ) { }
 
   ngOnInit() {
     window.scroll(0, 0);
+
+    if(this.id == 0) {
+      this.router.navigate(['/login']);
+
+    }
 
     this.getAllMesas();
 
@@ -52,6 +61,14 @@ export class GerenciaComponent implements OnInit {
       this.produto = resp;
 
     });
+
+  }
+
+  redirecionaParaPaginaProduto(idMesa: number, idProduto: number) {
+
+    environment.memoriaNavegacaoUsuario = idMesa; // ARMAZENA A NAVEGACAO DO PRODUTO DO ULTIMO CARRINHO CLICADO DENTRO DE GERENCIA
+
+    this.router.navigate(['/produto', idProduto]);
 
   }
 

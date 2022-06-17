@@ -52,9 +52,12 @@
             <div class="descricao">
               <p>{{produto.descricao}}</p>
             </div>
+            <div class="adicionar-produto" (click)="pedirProduto(mesa.id, produto.id)">
+              <p>Pedir</p>
+            </div>
           </div>
 
-          <div class="img" style="background-image: url({{produto.img}});" (click)="pedirProduto(mesa.id, produto.id)" >
+          <div [routerLink]="['/produto', produto.id]" class="img" style="background-image: url({{produto.img}});" >
             <!-- BACKGROUND IMG PRODUTO -->
           </div>
 

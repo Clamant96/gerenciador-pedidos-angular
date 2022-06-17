@@ -6,7 +6,7 @@ import { Produto } from './../model/Produto';
 import { ProdutoService } from './../service/produto.service';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -28,12 +28,18 @@ export class HomeComponent implements OnInit {
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
     private mesaService: MesaService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
 
   ) { }
 
   ngOnInit() {
     window.scroll(0, 0);
+
+    if(this.id == 0) {
+      this.router.navigate(['/login']);
+
+    }
 
     this.getAllCategorias(); // CARREGA A LISTA COM TODOS OS PRODUTOS DA BASE DE DADOS
 
@@ -46,7 +52,11 @@ export class HomeComponent implements OnInit {
 
     }
 
-    this.getByIdMesa(this.id); // VALOR DE ID FORCADO PARA TESTE
+    environment.memoriaNavegacaoUsuario = this.id; // ARMAZENA A MEMORIA DO ID DE NAVEGACAO
+
+    if(this.id > 0) {
+      this.getByIdMesa(this.id);
+    }
 
   }
 

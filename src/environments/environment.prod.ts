@@ -8,6 +8,7 @@ export const environment = {
 	produtos: [],
   img: "",
   tipo: "",
-  total: 0
+  total: 0,
+  memoriaNavegacaoUsuario: 0
 
 };

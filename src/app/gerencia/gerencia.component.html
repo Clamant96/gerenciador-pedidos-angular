@@ -2,14 +2,14 @@
   <div class="lista-mesas">
 
     <div class="conteudo-mesa" *ngFor="let mesa of this.listaMesas" >
-      <h1>{{mesa.nome}}</h1>
+      <h1 [routerLink]="['/home', mesa.id]" >{{mesa.nome}}</h1>
 
       <div class="produto">
-        <div class="card-produto" *ngFor="let pedido of mesa.produtos | orderBy: key : reverse" >
+        <div class="card-produto" *ngFor="let produto of mesa.produtos | orderBy: key : reverse" >
 
-          <div class="dados-produto" [routerLink]="['/home', mesa.id]" >
-            <p>{{pedido.nome}}</p>
-            <p class="qtd-produto">x {{pedido.qtdProduto}}</p>
+          <div class="dados-produto" >
+            <p (click)="redirecionaParaPaginaProduto(mesa.id, produto.id)" >{{produto.nome}}</p>
+            <!--<p class="qtd-produto">x {{pedido.qtdProduto}}</p>-->
           </div>
 
         </div>

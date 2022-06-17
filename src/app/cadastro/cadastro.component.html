@@ -1,0 +1,42 @@
+<section >
+  <div class="dados-usuario">
+
+    <h1>Cadastro</h1>
+
+    <div class="input-grupo">
+      <label for="nome">Mesa</label>
+      <input [(ngModel)]='mesa.nome' type="text" name="nome" id="nome" placeholder="Mesa">
+    </div>
+    <div class="input-grupo">
+        <label for="senha">Senha</label>
+        <input [(ngModel)]='mesa.senha' type="password" name="senha" id="senha" placeholder="Senha">
+    </div>
+    <div class="input-grupo">
+      <label for="senha">Senha</label>
+      <input (input)='confirmeSenha($event)' type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirmar Senha">
+    </div>
+    <div class="input-grupo">
+      <label for="img">IMG</label>
+      <input [(ngModel)]='mesa.img' type="text" name="img" id="img" placeholder="IMG">
+    </div>
+    <div class="input-grupo">
+      <label for="img">Tipo</label>
+      <select (change)='tipoM($event)' name="tipo" id="tipo">
+          <option>Selecione um tipo de mesa:</option>
+          <option value="mesa">Mesa</option>
+          <option value="adm">Administrador</option>
+      </select>
+    </div>
+
+    <div class="botoes">
+        <button type="submit" (click)='cadastro()'>Cadastrar</button>
+    </div>
+
+    <div class="hr">
+      <hr />
+    </div>
+
+    <p class="link">Já tem uma conta ? <a routerLink="/login">Login</a></p>
+
+  </div>
+</section>

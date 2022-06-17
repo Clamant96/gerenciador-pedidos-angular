@@ -319,6 +319,36 @@ section .painel-principal .card-categoria .produto .card-produto .dados-produto 
 
 }
 
+section .painel-principal .card-categoria .produto .card-produto .dados-produto .adicionar-produto {
+  margin: 1% 0%;
+  padding: 0.5% 0%;
+
+  width: 10%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-mesagem-usuario);
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+section .painel-principal .card-categoria .produto .card-produto .dados-produto .adicionar-produto p {
+  font-size: 16px;
+  font-weight: 600;
+
+  color: var(--background-page);
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+}
+
 section .painel-principal .card-categoria .produto .card-produto .img {
   width: 200px;
   height: 140px;

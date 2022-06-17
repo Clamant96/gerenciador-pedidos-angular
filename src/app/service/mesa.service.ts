@@ -1,3 +1,4 @@
+import { MesaLogin } from './../model/MesaLogin';
 import { Produto } from './../model/Produto';
 import { Mesa } from './../model/Mesa';
 import { Observable } from 'rxjs';
@@ -31,6 +32,16 @@ export class MesaService {
   findByIdMesa(id: number): Observable<Mesa> {
 
     return this.http.get<Mesa>(`${this.server}/mesas/${id}`);
+  }
+
+  login(mesaLogin: MesaLogin): Observable<MesaLogin> {
+
+    return this.http.post<MesaLogin>(`${this.server}/mesas/login`, mesaLogin);
+  }
+
+  cadastrar(mesa: Mesa): Observable<Mesa> {
+
+    return this.http.post<Mesa>(`${this.server}/mesas`, mesa);
   }
 
   adicionarProdutoAMesa(idMesa: number, idProduto: number): Observable<boolean> {

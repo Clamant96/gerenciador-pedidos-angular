@@ -1,0 +1,143 @@
+section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-header-usuario-home);
+
+}
+
+section .dados-usuario {
+  width: 30%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+section .dados-usuario h1 {
+  width: 100%;
+  height: auto;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+
+  color: var(--text-white);
+
+}
+
+section .dados-usuario .input-grupo {
+  width: 100%;
+  height: auto;
+
+
+}
+
+section .dados-usuario .input-grupo label {
+  width: 100%;
+  height: auto;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+
+  color: var(--text-white);
+
+}
+
+section .dados-usuario .input-grupo input {
+  padding: 1% 2%;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 5px;
+  border: none;
+
+  outline: none;
+
+}
+
+section .dados-usuario .botoes {
+  padding: 5% 0%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+section .dados-usuario .botoes button {
+  padding: 1% 0%;
+
+  width: 30%;
+  height: auto;
+
+  border-radius: 5px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+section .dados-usuario .hr {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section .dados-usuario .hr hr {
+  width: 70%;
+  height: auto;
+
+  border-top: 0px solid var(--border-style-search);
+  border-left: 0px solid var(--border-style-search);
+  border-right: 0px solid var(--border-style-search);
+  border-bottom: 2px solid var(--background-page) !important;
+
+}
+
+section .dados-usuario .link {
+  width: 100%;
+  height: auto;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: center;
+
+  color: var(--text-white);
+
+}
+
+section .dados-usuario .link a {
+  text-decoration: none;
+
+  color: var(--text-titulo-produto);
+
+  font-weight: 700;
+
+  transition: color, .2s ease-in-out;
+
+}
+
+section .dados-usuario .link a:hover {
+  color: var(--text-white);
+
+}

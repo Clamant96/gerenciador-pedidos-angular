@@ -1,0 +1,25 @@
+<section >
+  <div class="dados-usuario">
+
+    <h1>Login</h1>
+
+    <div class="input-grupo">
+      <label for="nome">Mesa</label>
+      <input [(ngModel)]='mesaLogin.nome' type="text" name="nome" id="nome" placeholder="Mesa">
+    </div>
+    <div class="input-grupo">
+        <label for="senha">Senha</label>
+        <input [(ngModel)]='mesaLogin.senha' type="password" name="senha" id="senha" placeholder="Senha">
+    </div>
+    <div class="botoes">
+        <button type="submit" (click)='logar()'>Entrar</button>
+    </div>
+
+    <div class="hr">
+      <hr />
+    </div>
+
+    <p class="link">Não tem uma conta ? <a routerLink="/cadastro">Cadastre-se</a></p>
+
+  </div>
+</section>
