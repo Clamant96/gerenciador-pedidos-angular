@@ -40,7 +40,13 @@ export class LoginComponent implements OnInit {
       console.log(environment.tipo);
       console.log(environment.img);
 
-      this.router.navigate(['/home']);
+      if(environment.tipo == "adm") {
+        this.router.navigate(['/gerencia']);
+
+      }else {
+        this.router.navigate(['/home']);
+
+      }
 
     }, erro => {
       if(erro.status == 500) {
