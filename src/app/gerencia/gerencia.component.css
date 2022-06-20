@@ -12,6 +12,20 @@ section {
 
 }
 
+section .lista-vazia {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-white);
+
+  cursor: pointer;
+
+}
+
 section .lista-mesas {
   width: 80%;
   height: auto;

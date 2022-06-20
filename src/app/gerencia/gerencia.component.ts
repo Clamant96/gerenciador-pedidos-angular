@@ -25,6 +25,8 @@ export class GerenciaComponent implements OnInit {
 
   public id: number = environment.id;
 
+  public comprimentoLista: number = 0;
+
   constructor(
     private mesaService: MesaService,
     private produtoService: ProdutoService,
@@ -51,6 +53,8 @@ export class GerenciaComponent implements OnInit {
 
       // POPULA O OBJ MESA COM O RETORNO TRATADO
       this.listaMesas = resp;
+
+      this.comprimentoLista = this.listaMesas.length;
 
     });
 

@@ -1,5 +1,5 @@
 <section>
-  <div class="lista-mesas">
+  <div *ngIf="this.comprimentoLista > 0" class="lista-mesas">
 
     <div class="conteudo-mesa" *ngFor="let mesa of this.listaMesas" >
       <h1 [routerLink]="['/home', mesa.id]" >{{mesa.nome}}</h1>
@@ -18,4 +18,5 @@
     </div>
 
   </div>
+  <h1 class="lista-vazia" *ngIf="this.comprimentoLista == 0" routerLink="/home" >Ainda não temos pedidos realizados...</h1>
 </section>
